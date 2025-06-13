@@ -1,1 +1,169 @@
-oi aprendido
+
+
+<form method="post">
+    <input type="hidden" name="sesskey" value="{{sesskey}}">
+
+<br>
+
+<div class="container border">
+    <div class="form-group mb-3">
+        <label for="data_la" class="form-label d-block text-center">For this LA tool it is clear what data is being collected</label>
+        <div class="d-flex align-items-center justify-content-center flex-wrap">
+            <span class="me-2">Strongly Agree</span>
+            <div id="data_la" class="d-flex flex-row flex-wrap">
+                {{#range_1_10}}
+                    <div class="form-check form-check-inline mx-1">
+                        <input class="form-check-input" type="radio" name="data_la" id="data_la_{{.}}" value="{{.}}">
+                        <label class="form-check-label" for="data_la_{{.}}">{{.}}</label>
+                    </div>
+                {{/range_1_10}}
+            </div>
+            <span class="ms-2">Strongly Disagree</span>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container border">
+    <div class="form-group mb-3">
+        <label for="data_lb" class="form-label d-block text-center">For this LA tool it is clear why the data is being collected</label>
+        <div class="d-flex align-items-center justify-content-center flex-wrap">
+            <span class="me-2">Strongly Agree</span>
+            <div id="data_lb" class="d-flex flex-row flex-wrap">
+                {{#range_1_10}}
+                    <div class="form-check form-check-inline mx-1">
+                        <input class="form-check-input" type="radio" name="data_lb" id="data_lb_{{.}}" value="{{.}}">
+                        <label class="form-check-label" for="data_lb_{{.}}">{{.}}</label>
+                    </div>
+                {{/range_1_10}}
+            </div>
+            <span class="ms-2">Strongly Disagree</span>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container border">
+    <div class="form-group mb-3">
+        <label for="aware_la" class="form-label d-block text-center">This LA tool makes me aware of my current learning situation</label>
+        <div class="d-flex align-items-center justify-content-center flex-wrap">
+            <span class="me-2">Strongly Agree</span>
+            <div id="aware_la" class="d-flex flex-row flex-wrap">
+                {{#range_1_10}}
+                    <div class="form-check form-check-inline mx-1">
+                        <input class="form-check-input" type="radio" name="aware_la" id="aware_la_{{.}}" value="{{.}}">
+                        <label class="form-check-label" for="aware_la_{{.}}">{{.}}</label>
+                    </div>
+                {{/range_1_10}}
+           </div>
+            <span class="ms-2">Strongly Disagree</span>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container border">
+    <div class="form-group mb-3">
+        <label for="aware_lb" class="form-label d-block text-center">This LA tool makes me forecast my possible future learning situation given my (un)changed behaviour</label>
+        <div class="d-flex align-items-center justify-content-center flex-wrap">
+            <span class="me-2">Strongly Agree</span>
+            <div id="aware_lb" class="d-flex flex-row flex-wrap">
+                {{#range_1_10}}
+                    <div class="form-check form-check-inline mx-1">
+                        <input class="form-check-input" type="radio" name="aware_lb" id="aware_lb_{{.}}" value="{{.}}">
+                        <label class="form-check-label" for="aware_lb_{{.}}">{{.}}</label>
+                    </div>
+                {{/range_1_10}}
+            </div>
+            <span class="ms-2">Strongly Disagree</span>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container border">
+    <div class="form-group mb-3">
+        <label for="aware_lc" class="form-label d-block text-center">This LA tool stimulates me to reflect on my past learning behaviour</label>
+        <div class="d-flex align-items-center justify-content-center flex-wrap">
+            <span class="me-2">Strongly Agree</span>
+            <div id="aware_lc" class="d-flex flex-row flex-wrap">
+                {{#range_1_10}}
+                    <div class="form-check form-check-inline mx-1">
+                        <input class="form-check-input" type="radio" name="aware_lc" id="aware_lc_{{.}}" value="{{.}}">
+                        <label class="form-check-label" for="aware_lc_{{.}}">{{.}}</label>
+                    </div>
+                {{/range_1_10}}
+           </div>
+            <span class="ms-2">Strongly Disagree</span>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container border">
+    <div class="form-group mb-3">
+        <label for="aware_ld" class="form-label d-block text-center">This LA tool stimulates me to adapt my learning behaviour if necessary</label>
+        <div class="d-flex align-items-center justify-content-center flex-wrap">
+            <span class="me-2">Strongly Agree</span>
+            <div id="aware_ld" class="d-flex flex-row flex-wrap">
+                {{#range_1_10}}
+                    <div class="form-check form-check-inline mx-1">
+                        <input class="form-check-input" type="radio" name="aware_ld" id="aware_ld_{{.}}" value="{{.}}">
+                        <label class="form-check-label" for="aware_ld_{{.}}">{{.}}</label>
+                    </div>
+                {{/range_1_10}}
+            </div>
+            <span class="ms-2">Strongly Disagree</span>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container border">
+    <div class="form-group mb-3">
+        <label for="impact_la" class="form-label d-block text-center">This LA tool stimulates me to study more efficiently</label>
+        <div class="d-flex align-items-center justify-content-center flex-wrap">
+            <span class="me-2">Strongly Agree</span>
+            <div id="impact_la" class="d-flex flex-row flex-wrap">
+                {{#range_1_10}}
+                    <div class="form-check form-check-inline mx-1">
+                        <input class="form-check-input" type="radio" name="impact_la" id="impact_la_{{.}}" value="{{.}}">
+                        <label class="form-check-label" for="impact_la_{{.}}">{{.}}</label>
+                    </div>
+                {{/range_1_10}}
+            </div>
+            <span class="ms-2">Strongly Disagree</span>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container border">
+    <div class="form-group mb-3">
+        <label for="impact_lb" class="form-label d-block text-center">This LA tool stimulates me to study more effectively</label>
+        <div class="d-flex align-items-center justify-content-center flex-wrap">
+            <span class="me-2">Strongly Agree</span>
+            <div id="impact_lb" class="d-flex flex-row flex-wrap">
+                {{#range_1_10}}
+                    <div class="form-check form-check-inline mx-1">
+                        <input class="form-check-input" type="radio" name="impact_lb" id="impact_lb_{{.}}" value="{{.}}">
+                        <label class="form-check-label" for="impact_lb_{{.}}">{{.}}</label>
+                    </div>
+                {{/range_1_10}}
+            </div>
+            <span class="ms-2">Strongly Disagree</span>
+        </div>
+    </div>
+</div>
+    <button type="submit" class="btn btn-primary mt-4">Submit</button>
+</form>
+
+
+
