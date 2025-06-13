@@ -24,7 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && confirm_sesskey()) {
 }
 $context = [
     'range_1_10' => range(1, 10),
-    // any other variables to pass
 ];
 $context['sesskey'] = sesskey();
 
