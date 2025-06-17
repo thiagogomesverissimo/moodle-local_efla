@@ -10,9 +10,9 @@ $PAGE->set_context(context_system::instance());
 
 echo $OUTPUT->header();
 
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && confirm_sesskey()) {
     $profans = new stdClass();
+    $profans->numusp_teach = optional_param('numusp_teach', '', PARAM_INT);
     $profans->data_ta = optional_param('data_ta', '', PARAM_INT);
     $profans->data_tb = optional_param('data_tb', '', PARAM_INT);
     $profans->aware_ta = optional_param('aware_ta', '', PARAM_INT);
@@ -21,6 +21,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && confirm_sesskey()) {
     $profans->aware_td = optional_param('aware_td', '', PARAM_INT);
     $profans->impact_ta = optional_param('impact_ta', '', PARAM_INT);
     $profans->impact_tb = optional_param('impact_tb', '', PARAM_INT);
+
+    $DB->insert_record('efla_teachers', $profans);
+    redirect('results.php', 'Salvo com sucesso!');
+
 }
 
 $context = [

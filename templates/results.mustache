@@ -1,0 +1,68 @@
+<h2>Resultados</h2>
+
+<br/>
+<br/>
+
+<table class="generaltable">
+    <thead>
+        <tr>
+            <th>Número USP</th>
+            <th>data_la</th>
+            <th>data_lb</th>
+            <th>aware_la</th>
+            <th>aware_lb</th>
+            <th>aware_lc</th>
+            <th>aware_ld</th>
+            <th>impact_la</th>
+            <th>impact_lb</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#efla_learners}}
+        <tr>
+            <td>{{numusp_learn}}</td>
+            <td>{{data_la}}</td>
+            <td>{{data_lb}}</td>
+            <td>{{aware_la}}</td>
+            <td>{{aware_lb}}</td>
+            <td>{{aware_lc}}</td>
+            <td>{{aware_ld}}</td>
+            <td>{{impact_la}}</td>
+            <td>{{impact_lb}}</td>
+        </tr>
+        {{/efla_learners}}
+    </tbody>
+</table>
+
+<br/>
+
+<table class="generaltable">
+    <thead>
+        <tr>
+            <th>Número USP</th>
+            <th>data_ta</th>
+            <th>data_tb</th>
+            <th>aware_ta</th>
+            <th>aware_tb</th>
+            <th>aware_tc</th>
+            <th>aware_td</th>
+            <th>impact_ta</th>
+            <th>impact_tb</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#efla_teachers}}
+        <tr>
+            <td>{{numusp_teach}}</td>
+            <td>{{data_ta}}</td>
+            <td>{{data_tb}}</td>
+            <td>{{aware_ta}}</td>
+            <td>{{aware_tb}}</td>
+            <td>{{aware_tc}}</td>
+            <td>{{aware_td}}</td>
+            <td>{{impact_ta}}</td>
+            <td>{{impact_tb}}</td>
+        </tr>
+        {{/efla_teachers}}
+    </tbody>
+</table>
